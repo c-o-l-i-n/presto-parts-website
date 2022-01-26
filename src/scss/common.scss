@@ -1,6 +1,8 @@
 // update Bulma's global variables
 $primary: DodgerBlue;
 $link: $primary;
+$navbar-height: 5rem;
+$navbar-item-img-max-height: $navbar-height * 0.65;
 
 // import Bulma and dark mode
 @import '../../node_modules/bulma/bulma.sass';
@@ -9,4 +11,8 @@ $link: $primary;
 // ------------------------------ custom styles -------------------------------
 body {
 	min-height: 100vh;
+}
+
+.is-mega {
+	font-size: 6rem;
 }
