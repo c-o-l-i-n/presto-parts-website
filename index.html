@@ -13,19 +13,12 @@
 		/>
 		<title>Presto Parts</title>
 	</head>
-	<body class="is-flex is-flex-direction-column">
-		<nav
-			class="navbar is-primary"
-			role="navigation"
-			aria-label="main navigation"
-		>
+	<body class="is-flex is-flex-direction-column has-background-primary-light">
+		<nav class="navbar is-white" role="navigation" aria-label="main navigation">
 			<div class="container">
 				<div class="navbar-brand">
-					<a
-						class="navbar-item is-size-4 has-text-weight-bold"
-						href="https://bulma.io"
-					>
-						Presto Parts
+					<a class="navbar-item is-size-4 has-text-weight-bold" href="/">
+						<img src="images/logo.png" alt="Presto Parts" />
 					</a>
 
 					<a
@@ -56,8 +49,10 @@
 			</div>
 		</nav>
 		<section class="section is-flex-grow-1">
-			<div class="container">
-				<h1 class="title">Presto Parts</h1>
+			<div
+				class="container has-text-centered-touch is-flex-touch is-flex-direction-column is-justify-content-center-touch"
+			>
+				<h1 class="title is-mega">Presto Parts</h1>
 				<h2 class="subtitle">Organize sheet music</h2>
 
 				<a
@@ -72,16 +67,14 @@
 				</a>
 			</div>
 		</section>
-		<footer class="footer">
-			<div class="content has-text-centered">
-				<p>
-					Copyright &copy;
-					<script>
-						document.write(new Date().getFullYear())
-					</script>
-					Colin A. Williams
-				</p>
-			</div>
+		<footer class="footer has-background-dark has-text-light has-text-centered">
+			<p>
+				Copyright &copy;
+				<script>
+					document.write(new Date().getFullYear())
+				</script>
+				Colin A. Williams
+			</p>
 		</footer>
 		<script src="js/index.js"></script>
 	</body>
