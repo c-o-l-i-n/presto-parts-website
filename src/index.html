@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/common.css" />
 		<title>Presto Parts</title>
 	</head>
-	<body>
+	<body class="is-flex is-flex-direction-column">
 		<nav
 			class="navbar is-primary"
 			role="navigation"
@@ -49,11 +49,22 @@
 				</div>
 			</div>
 		</nav>
-		<section class="section">
-			<div class="container">
+		<section class="section is-flex-grow-1">
+			<div class="container is-fullheight">
 				<h1 class="title">Presto Parts</h1>
 				<h2 class="subtitle">Organize sheet music</h2>
 			</div>
 		</section>
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p>
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear())
+					</script>
+					Colin A. Williams
+				</p>
+			</div>
+		</footer>
 	</body>
 </html>

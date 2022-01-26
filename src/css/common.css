@@ -16944,5 +16944,8 @@ label.panel-block:hover {
     background-color: #121212;
   }
 }
+body {
+  min-height: 100vh;
+}
 
 /*# sourceMappingURL=common.css.map */
