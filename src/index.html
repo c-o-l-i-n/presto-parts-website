@@ -30,7 +30,6 @@
 		<meta name="msapplication-config" content="/icons/browserconfig.xml" />
 		<meta name="theme-color" content="#1e90ff" />
 
-		<!-- CSS -->
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -48,11 +47,12 @@
 					</a>
 
 					<a
+						id="navbar-burger"
 						role="button"
 						class="navbar-burger"
 						aria-label="menu"
 						aria-expanded="false"
-						data-target="navbarBasicExample"
+						data-target="navbar-menu"
 					>
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
@@ -60,7 +60,7 @@
 					</a>
 				</div>
 
-				<div id="navbarBasicExample" class="navbar-menu">
+				<div id="navbar-menu" class="navbar-menu">
 					<div class="navbar-end">
 						<a class="navbar-item"> Home </a>
 						<a
@@ -70,6 +70,16 @@
 						>
 							Source Code
 						</a>
+						<div class="navbar-item">
+							<div class="buttons">
+								<a class="button is-dark">
+									<span class="icon is-medium">
+										<i class="fa fa-heart"></i>
+									</span>
+									<span>Donate</span></a
+								>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -149,6 +159,5 @@
 				Colin A. Williams
 			</p>
 		</footer>
-		<script src="bundle.js"></script>
 	</body>
 </html>
