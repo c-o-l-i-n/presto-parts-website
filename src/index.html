@@ -44,7 +44,7 @@
 		<nav class="navbar is-white" role="navigation" aria-label="main navigation">
 			<div class="container">
 				<div class="navbar-brand">
-					<a class="navbar-item is-size-4 has-text-weight-bold" href="/">
+					<a class="navbar-item is-size-4 has-text-weight-bold">
 						<img src="images/logo.png" alt="Presto Parts" />
 					</a>
 
@@ -77,14 +77,49 @@
 		</nav>
 		<section class="section is-flex-grow-1">
 			<div
-				class="container has-text-centered-touch is-flex-touch is-flex-direction-column is-justify-content-center-touch"
+				class="container has-text-centered-mobile is-flex-mobile is-flex-direction-column is-justify-content-center"
 			>
-				<h1 class="title is-mega">Presto Parts</h1>
-				<h2 class="subtitle is-3">
-					Restructure your sheet music to be by part, not by song
-				</h2>
-				<div class="is-inline-block">
-					<a href="#" class="button is-primary is-large mt-4 is-flex-touch">
+				<div class="columns">
+					<div class="column is-three-fifths">
+						<h1 class="title is-mega">Presto Parts</h1>
+						<h2 class="subtitle is-3">
+							Restructure your sheet music to be by part, not by song
+						</h2>
+
+						<!-- Download Buttons -->
+						<div class="mt-6 is-hidden-touch is-hidden-desktop-only">
+							<div class="is-inline-block">
+								<a href="#" class="button is-primary is-large is-flex-mobile">
+									<span class="icon is-medium">
+										<i class="fab fa-windows"></i>
+									</span>
+									<span>Download for Windows</span>
+								</a>
+								<p class="has-text-centered">v0.0.0 (0 MB)</p>
+							</div>
+							<div class="is-inline-block">
+								<a
+									href="#"
+									class="button is-primary is-large is-flex-mobile ml-4"
+								>
+									<span class="icon is-medium">
+										<i class="fab fa-apple"></i>
+									</span>
+									<span>Download for macOS</span>
+								</a>
+								<p class="has-text-centered">v0.0.0 (0 MB)</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="column is-two-fifths is-flex is-align-items-center">
+						<img id="laptop" class="" src="images/laptop.png" alt="Laptop" />
+					</div>
+				</div>
+
+				<!-- Download Buttons -->
+				<div class="is-inline-block is-hidden-widescreen">
+					<a href="#" class="button is-primary is-large mt-4 is-flex-mobile">
 						<span class="icon is-medium">
 							<i class="fab fa-windows"></i>
 						</span>
@@ -92,8 +127,11 @@
 					</a>
 					<p class="has-text-centered">v0.0.0 (0 MB)</p>
 				</div>
-				<div class="is-inline-block">
-					<a href="#" class="button is-primary is-large mt-4 is-flex-touch">
+				<div class="is-inline-block is-hidden-widescreen">
+					<a
+						href="#"
+						class="button is-primary is-large mt-4 is-flex-mobile ml-4 ml-0-mobile"
+					>
 						<span class="icon is-medium">
 							<i class="fab fa-apple"></i>
 						</span>

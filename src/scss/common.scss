@@ -16,3 +16,17 @@ body {
 .is-mega {
 	font-size: 6rem;
 }
+
+@media screen and (max-width: $tablet) {
+	// remove button margin on mobile
+	.ml-0-mobile {
+		margin-left: 0 !important;
+	}
+}
+
+// displays that are too small to fit the word "Presto" on 1 line
+@media only screen and (max-width: 365px) {
+	html {
+		font-size: small;
+	}
+}
