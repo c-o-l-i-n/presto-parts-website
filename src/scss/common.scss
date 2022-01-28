@@ -17,7 +17,44 @@ body {
 	font-size: 6rem;
 }
 
+#laptop {
+	background: url('../images/video.gif') no-repeat top left transparent;
+	background-position: 50% 50%;
+	background-size: 77% 77%;
+}
+
+// #laptop {
+// 	width: 100%;
+// 	height: 100%;
+// 	position: relative;
+
+// 	&:after {
+// 		content: '';
+// 		display: block;
+// 		background: url('../images/laptop.png') no-repeat top left transparent;
+// 		background-size: contain;
+// 		background-position: 50%;
+// 		width: 100%;
+// 		height: 100%;
+// 		left: 0px;
+// 		top: 0px;
+// 		position: absolute;
+// 		z-index: 10;
+// 	}
+
+// 	video {
+// 		position: absolute;
+// 		top: 8%;
+// 		left: 11%;
+// 		z-index: 5;
+// 	}
+// }
+
 @media screen and (max-width: $tablet) {
+	#laptop {
+		height: 55vw;
+	}
+
 	// remove button margin on mobile
 	.ml-0-mobile {
 		margin-left: 0 !important;
