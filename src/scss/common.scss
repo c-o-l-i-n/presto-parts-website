@@ -18,9 +18,15 @@ body {
 }
 
 #laptop {
-	background: url('../images/video.gif') no-repeat top left transparent;
+	background: url('../assets/video.gif') no-repeat top left transparent;
 	background-position: 50% 50%;
 	background-size: 77% 77%;
+}
+
+#canvas {
+	height: 20rem;
+	width: 100vw;
+	background-color: red;
 }
 
 // #laptop {

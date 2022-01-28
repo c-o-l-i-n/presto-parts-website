@@ -1,3 +1,8 @@
+import '../scss/common.scss'
+import * as THREE from 'three'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+
+// Navbar hamburger menu
 document.addEventListener('DOMContentLoaded', () => {
 	// Get all "navbar-burger" elements
 	const $navbarBurgers = Array.prototype.slice.call(
