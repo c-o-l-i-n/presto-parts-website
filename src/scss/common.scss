@@ -54,7 +54,13 @@ body {
 // 	}
 // }
 
-@media screen and (max-width: $tablet) {
+@include until($fullhd) {
+	.block-until-fullhd {
+		@include block(1.5rem);
+	}
+}
+
+@include until($desktop) {
 	#laptop {
 		height: 55vw;
 	}
