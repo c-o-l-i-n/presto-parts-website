@@ -91,9 +91,9 @@
 				<div class="columns">
 					<div class="column is-three-fifths">
 						<h1 class="title is-mega">Presto Parts</h1>
-						<h2 class="subtitle is-3">
+						<p class="subtitle is-3">
 							Restructure your sheet music to be by part, not by song
-						</h2>
+						</p>
 
 						<!-- Download Buttons for "Widescreen" and larger -->
 						<div class="mt-6 is-hidden-touch is-hidden-desktop-only">
@@ -188,15 +188,91 @@
 			</div>
 		</section>
 		<!-- <canvas id="canvas"></canvas> -->
-		<section class="section is-flex-grow-1"></section>
+		<section class="section has-background-grey-lighter">
+			<div class="container content has-text-centered">
+				<h1 class="title">What is Presto Parts?</h1>
+				<h2 class="subtitle has-text-weight-normal is-italic mb-0">
+					A Dramatization:
+				</h2>
+			</div>
+		</section>
+		<section id="description" class="section is-flex-grow-1">
+			<div class="container content">
+				<h1>
+					Your concert band is playing songs by "The Insects" for the spring
+					concert.
+				</h1>
+				<p>Your arranger sent you PDFs of each peice.</p>
+				<p>
+					To facilitate printing and distributing music, you want to rearrange
+					the PDFs so that each file has each player's individual part for the
+					whole concert.
+				</p>
+				<p>
+					You open
+					<span class="has-text-primary has-text-weight-bold">Presto Parts</span
+					>.
+				</p>
+				<p>First, you to seperate each song PDF into its individul parts.</p>
+				<div class="columns">
+					<img
+						src="assets/seperate.png"
+						alt="Screenshot"
+						class="image column is-half"
+					/>
+					<div
+						class="column is-half is-flex is-flex-direction-column is-justify-content-center"
+					>
+						<p>
+							For each piece, you import the song PDF and list out each part and
+							its number of pages.
+						</p>
+						<p>
+							The result is a folder for each piece containing PDFs for all of
+							its individual parts:
+						</p>
+						<img
+							src="assets/folders.png"
+							alt="Folders"
+							class="image column is-three-fifths is-offset-one-fifth"
+						/>
+					</div>
+				</div>
+				<div class="columns">
+					<div
+						class="column is-flex is-flex-direction-column is-justify-content-center"
+					>
+						<p>Now, you glue each like-part together.</p>
+						<p>You list each song in concert order.</p>
+						<p>You list each part and its number of players.</p>
+						<p>
+							The final result is a PDF for each musician, plus a "MASTER" PDF
+							containing your specified number of copies of each part, ready to
+							print, all in one!
+						</p>
+					</div>
+					<img
+						src="assets/generate.png"
+						alt="Screenshot"
+						class="image column is-half"
+					/>
+				</div>
+				<div class="is-flex is-justify-content-center">
+					<a href="#" class="button is-large is-primary is-rounded">
+						Get Presto Parts
+					</a>
+				</div>
+			</div>
+		</section>
 		<footer class="footer has-background-dark has-text-light has-text-centered">
 			<p>
 				Copyright &copy;
 				<script>
 					document.write(new Date().getFullYear())
 				</script>
-				&nbsp;Colin A. Williams
+				&ThinSpace;Colin A. Williams
 			</p>
+			<p class="mt-3">contact@prestoparts.org</p>
 		</footer>
 	</body>
 </html>
