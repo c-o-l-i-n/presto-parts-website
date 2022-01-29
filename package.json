@@ -20,9 +20,7 @@
 	},
 	"homepage": "https://github.com/c-o-l-i-n/presto-parts-website#readme",
 	"dependencies": {
-		"bulma": "^0.9.3",
-		"bulma-prefers-dark": "0.1.0-beta.1",
-		"three": "^0.137.4"
+		"bulma": "^0.9.3"
 	},
 	"devDependencies": {
 		"copy-webpack-plugin": "^10.2.0",
