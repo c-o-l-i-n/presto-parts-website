@@ -60,7 +60,7 @@ body {
 	}
 }
 
-@include until($desktop) {
+@include until($tablet) {
 	#laptop {
 		height: 55vw;
 	}
