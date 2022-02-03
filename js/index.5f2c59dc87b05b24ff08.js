@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=document.getElementById("navbar-burger"),e=document.getElementById(t.dataset.target);t.addEventListener("click",(()=>{t.classList.toggle("is-active"),e.classList.toggle("is-active")}))})();
