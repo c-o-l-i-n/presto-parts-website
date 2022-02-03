@@ -1,4 +1,4 @@
-import './style.scss'
+import '../../style.scss'
 
 const navbarBurger = document.getElementById('navbar-burger')
 const navbarBurgerTarget = document.getElementById(navbarBurger.dataset.target)
