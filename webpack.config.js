@@ -24,7 +24,7 @@ function getHtmlTemplate() {
 			(template) =>
 				new HtmlWebpackPlugin({
 					template: template.path,
-					chunks: [template.name],
+					chunks: ['shared', template.name],
 					filename:
 						(template.name === 'index' ? '' : `${template.name}/`) +
 						'index.html',
@@ -37,7 +37,7 @@ module.exports = {
 	devServer: {
 		static: './dist',
 	},
-	entry: getEntry(),
+	entry: { ...getEntry(), shared: './src/shared.js' },
 	output: {
 		path: `${__dirname}/dist`,
 		filename: 'js/[name].[contenthash].js',
