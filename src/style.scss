@@ -1,11 +1,17 @@
-// update Bulma's global variables
+// update Bulma and Font Awesome global variables
 $primary: DodgerBlue;
 $link: $primary;
 $navbar-height: 5rem;
 $navbar-item-img-max-height: $navbar-height * 0.65;
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 // import Bulma
-@import '../node_modules/bulma/bulma.sass';
+@import '~bulma/bulma.sass';
+// import Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
 
 // ------------------------------ custom styles -------------------------------
 body {
@@ -17,7 +23,7 @@ body {
 }
 
 #laptop {
-	background: url('/videos/video.gif') no-repeat top left transparent;
+	// background: url('/videos/video.gif') no-repeat top left transparent;
 	background-position: 50% 50%;
 	background-size: 77% 77%;
 }

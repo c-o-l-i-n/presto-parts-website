@@ -53,13 +53,20 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.(svg|eot|woff|woff2|ttf)$/,
+				type: 'asset/resource',
+				generator: {
+					filename: 'fonts/[hash][ext][query]',
+				},
+			},
+			{
 				test: /\.s[ac]ss$/i,
 				use: [
 					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
 						options: {
-							url: false,
+							url: true,
 						},
 					},
 					'sass-loader',
