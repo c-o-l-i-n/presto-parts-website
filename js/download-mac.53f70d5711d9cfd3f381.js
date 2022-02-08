@@ -1,0 +1,1 @@
+(()=>{const e=document.getElementById("download-iframe"),o=document.getElementById("download-link");setupDownload=async()=>{const t=(await fetch("https://api.github.com/repos/c-o-l-i-n/presto-parts/releases").then((e=>e.json())))[0].assets.find((e=>e.name.toLowerCase().includes("mac"))).browser_download_url;e.src=t,o.href=t},setupDownload()})();
