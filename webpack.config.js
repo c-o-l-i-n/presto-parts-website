@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const PurgeCSSPlugin = require('purgecss-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const glob = require('glob')
 
@@ -46,6 +47,9 @@ module.exports = {
 	plugins: [
 		...getHtmlTemplate(),
 		new MiniCssExtractPlugin(),
+		new PurgeCSSPlugin({
+			paths: glob.sync('./src/**/*', { nodir: true }),
+		}),
 		new CopyPlugin({
 			patterns: [{ from: './src/static', to: '' }],
 		}),
@@ -61,13 +65,7 @@ module.exports = {
 			},
 			{
 				test: /\.s[ac]ss$/i,
-				use: [
-					MiniCssExtractPlugin.loader,
-					{
-						loader: 'css-loader',
-					},
-					'sass-loader',
-				],
+				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
 			},
 		],
 	},
