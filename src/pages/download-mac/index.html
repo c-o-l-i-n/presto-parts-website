@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Site Icons -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/icons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/icons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/icons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/icons/site.webmanifest" />
+		<link rel="shortcut icon" href="/icons/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#2d89ef" />
+		<meta name="msapplication-config" content="/icons/browserconfig.xml" />
+		<meta name="theme-color" content="#1e90ff" />
+
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+			crossorigin="anonymous"
+		/>
+		<title>Presto Parts - Download for Windows</title>
+	</head>
+	<body class="has-background-primary-light is-flex is-flex-direction-column">
+		<nav class="navbar is-white" role="navigation" aria-label="main navigation">
+			<div class="container">
+				<div class="navbar-brand">
+					<a href="/" class="navbar-item is-size-4 has-text-weight-bold">
+						<img src="/images/logo.png" alt="Presto Parts" />
+					</a>
+
+					<a
+						id="navbar-burger"
+						role="button"
+						class="navbar-burger"
+						aria-label="menu"
+						aria-expanded="false"
+						data-target="navbar-menu"
+					>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+
+				<div id="navbar-menu" class="navbar-menu">
+					<div class="navbar-end">
+						<a href="/" class="navbar-item"> Home </a>
+						<a class="navbar-item" href="/report"> Report Issue </a>
+						<a
+							class="navbar-item"
+							href="https://github.com/c-o-l-i-n/presto-parts"
+							target="_blank"
+							rel="noopener"
+						>
+							Source Code
+						</a>
+						<div class="navbar-item">
+							<div class="buttons">
+								<a
+									href="https://www.buymeacoffee.com/colinw"
+									target="_blank"
+									rel="noopener"
+									class="button is-dark"
+								>
+									<span class="icon is-medium">
+										<i class="fa fa-heart"></i>
+									</span>
+									<span>Donate</span></a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="section is-flex-grow-1">
+			<div class="container content">
+				<h1>Thank you for downloading Presto Parts for macOS!</h1>
+				<p>
+					If your download does not begin automatically,
+					<a id="download-link">click here</a>.
+				</p>
+				<iframe id="download-iframe" style="display: none"></iframe>
+			</div>
+		</section>
+		<footer class="footer has-background-dark has-text-light has-text-centered">
+			<p>
+				Copyright &copy;
+				<script>
+					document.write(new Date().getFullYear())
+				</script>
+				&MediumSpace;Colin A. Williams
+			</p>
+			<p class="mt-3">contact@prestoparts.org</p>
+		</footer>
+	</body>
+</html>

@@ -11,7 +11,7 @@ const macDownloadSizeElements =
 
 const bytesToMegabytes = (bytes) => (bytes / 1024 / 1024).toFixed(1)
 
-const setupDownloads = async () => {
+const setupDownloadButtons = async () => {
 	// get latest release from Github
 	const releases = await fetch(
 		'https://api.github.com/repos/c-o-l-i-n/presto-parts/releases'
@@ -20,40 +20,30 @@ const setupDownloads = async () => {
 
 	// get download info
 	const version = latestRelease.tag_name
-	const windowsDownload = latestRelease.assets.find((asset) =>
+	const windowsDownloadSize = latestRelease.assets.find((asset) =>
 		asset.name.toLowerCase().includes('windows')
-	)
-	const macDownload = latestRelease.assets.find((asset) =>
+	).size
+	const macDownloadSize = latestRelease.assets.find((asset) =>
 		asset.name.toLowerCase().includes('mac')
-	)
+	).size
 
 	// set version number
 	for (const versionElement of versionElements) {
 		versionElement.innerHTML = version
 	}
 
-	// set windows download link
-	for (const windowsDownloadElement of windowsDownloadElements) {
-		windowsDownloadElement.href = windowsDownload.browser_download_url
-	}
-
 	// set windows download size
 	for (const windowsDownloadSizeElement of windowsDownloadSizeElements) {
 		windowsDownloadSizeElement.innerHTML = `(${bytesToMegabytes(
-			windowsDownload.size
+			windowsDownloadSize
 		)} MB)`
-	}
-
-	// set mac download link
-	for (const macDownloadElement of macDownloadElements) {
-		macDownloadElement.href = macDownload.browser_download_url
 	}
 
 	// set mac download size
 	for (const macDownloadSizeElement of macDownloadSizeElements) {
 		macDownloadSizeElement.innerHTML = `(${bytesToMegabytes(
-			macDownload.size
+			macDownloadSize
 		)} MB)`
 	}
 }
-setupDownloads()
+setupDownloadButtons()
