@@ -34,7 +34,7 @@ function getHtmlTemplate() {
 }
 
 module.exports = {
-	mode: 'development',
+	mode: 'production',
 	devServer: {
 		static: './dist',
 	},
