@@ -65,9 +65,6 @@ module.exports = {
 					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
-						options: {
-							url: true,
-						},
 					},
 					'sass-loader',
 				],
