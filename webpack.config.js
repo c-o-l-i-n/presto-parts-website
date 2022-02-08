@@ -47,11 +47,7 @@ module.exports = {
 		...getHtmlTemplate(),
 		new MiniCssExtractPlugin(),
 		new CopyPlugin({
-			patterns: [
-				{ from: './src/CNAME', to: 'CNAME', toType: 'file' },
-				{ from: './src/assets', to: 'assets' },
-				{ from: './src/icons', to: 'icons' },
-			],
+			patterns: [{ from: './src/static', to: '' }],
 		}),
 	],
 	module: {
