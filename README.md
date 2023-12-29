@@ -1,11 +1,7 @@
-# presto-parts-website
+# Presto Parts Website
 
-<img alt="Presto Parts Logo" width="128" height="128" align="right" src="https://github.com/c-o-l-i-n/presto-parts/raw/main/app-icons/app-icon.iconset/icon_256x256.png" />
-<p>
-  <img alt="Build Status" src="https://img.shields.io/github/workflow/status/c-o-l-i-n/presto-parts-website/Build%20and%20Deploy">
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/c-o-l-i-n/presto-parts-website">
-  <img alt="Code style: prettier" src="https://img.shields.io/badge/code_style-prettier-6a5acd.svg"></a>
-</p>
+[![Build Status](https://img.shields.io/github/actions/workflow/status/c-o-l-i-n/presto-parts-website/build.yml?branch=main&logo=github&logoWidth=12)](https://github.com/c-o-l-i-n/presto-parts-website/actions)
 
-> The official website for
-> [Presto Parts](https://github.com/c-o-l-i-n/presto-parts)
+The official website for [Presto Parts](https://github.com/c-o-l-i-n/presto-parts)
+
+[![Screenshot](src/static/images/screenshot.webp)](https://prestoparts.org)
